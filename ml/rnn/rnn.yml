@@ -1,0 +1,23 @@
+num_epochs: 30
+encoder_length: !!int 14
+forecast_length: !!int 14
+dropout: 0.1 
+rnn_num_layers: 3 
+rnn_hidden_size: [64, 64, 64] 
+learning_rate: 5.0e-6 
+weight_decay: 0.0 
+device: !!int 0
+model_name: rnn
+datasources: [['simulation']]
+eval_datasources : [['simulation']]
+noise:
+  train:
+    gaussian_mean: 0
+    gaussian_std: 0.0
+    locations_perc: 0.0
+  eval:
+    gaussian_mean: 0
+    gaussian_std: 0.0
+    locations_perc: 0.0
+num_eval_runs: !!int 1
+num_train_runs: !!int 3

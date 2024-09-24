@@ -1,0 +1,14 @@
+encoder_length: !!int 14
+forecast_length: !!int 14
+device: !!int 0
+model_name: repetition
+eval_datasources : [['simulation']]
+noise:
+  train:
+    gaussian_mean: 0
+    gaussian_std: 0.0
+    locations_perc: 0.0
+  eval:
+    gaussian_mean: 0
+    gaussian_std: 0.0
+    locations_perc: 0.0
