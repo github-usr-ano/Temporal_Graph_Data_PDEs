@@ -1,0 +1,13 @@
+mode: !!str train
+boxplot_dates: !!seq [2021-03-01, 2021-04-01, 2021-05-01, 2021-05-30]
+boxplot_rmse_ymax: !!float 1 
+boxplot_mape_ymax: !!float 200
+percentage_split: !!float 0.7
+device: !!int 0
+epochs: !!int 50
+forecast_length: !!int 14
+encoder_length: !!int 32
+learning_rate: !!float 1.0e-3
+weight_decay: !!float 0.0
+lr_scheduler: !!str ReduceLROnPlateau
+loss_func: !!str rmse
